@@ -64,6 +64,7 @@ public class BookRegisterServiceImpl extends ServiceImpl<BookRegisterDao, BookRe
         try {
             MessageUtils.sendSms(bookPhone, "您的验证码是: " + code);
             redisUtil.set(bookPhone, code);
+            String codeTemp = (String) redisUtil.get(bookPhone);
             return ResultBean.success();
         }catch (Exception  e) {
             e.getMessage();

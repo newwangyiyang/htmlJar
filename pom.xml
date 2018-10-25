@@ -6,7 +6,7 @@
 	<groupId>cn.yiyang.wang</groupId>
 	<artifactId>model</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 
 	<name>model</name>
 	<description>Demo project for Spring Boot</description>
@@ -69,20 +69,10 @@
             <artifactId>jsoup</artifactId>
             <version>1.9.2</version>
         </dependency>
-        <!--mybatis -->
+        <!--mysql -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.mybatis</groupId>
-            <artifactId>mybatis</artifactId>
-            <version>3.4.4</version>
-        </dependency>
-        <dependency>
-            <groupId>org.mybatis.spring.boot</groupId>
-            <artifactId>mybatis-spring-boot-starter</artifactId>
-            <version>1.1.1</version>
         </dependency>
         <!--druid-->
         <dependency>
@@ -158,7 +148,7 @@
             <optional>true</optional>
             <scope>true</scope>
         </dependency>
-        <!--代码逆向生成依赖-->
+        <!--代码逆向生成依赖 mybatis-plus-->
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus</artifactId>
@@ -179,28 +169,28 @@
 	<build>
 		<plugins>
             <!--该插件打成的war包可直接通过java -jar 进行运行-->
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
+			<!--<plugin>-->
+				<!--<groupId>org.springframework.boot</groupId>-->
+				<!--<artifactId>spring-boot-maven-plugin</artifactId>-->
+			<!--</plugin>-->
             <!--&lt;!&ndash;该插件打成的war包只能在tomcat中运行&ndash;&gt;-->
-            <!--<plugin>-->
-                <!--<artifactId>maven-war-plugin</artifactId>-->
-                <!--<configuration>-->
-                    <!--&lt;!&ndash;如果想在没有web.xml文件的情况下构建WAR，请设置为false&ndash;&gt;-->
-                    <!--<failOnMissingWebXml>false</failOnMissingWebXml>-->
-                    <!--&lt;!&ndash;设置war包的名字&ndash;&gt;-->
-                    <!--<warName>model</warName>-->
-                <!--</configuration>-->
-            <!--</plugin>-->
-            <!--&lt;!&ndash; 让打包的时候跳过测试代码 &ndash;&gt;-->
-            <!--<plugin>-->
-                <!--<groupId>org.apache.maven.plugins</groupId>-->
-                <!--<artifactId>maven-surefire-plugin</artifactId>-->
-                <!--<configuration>-->
-                    <!--<skip>true</skip>-->
-                <!--</configuration>-->
-            <!--</plugin>-->
+            <plugin>
+                <artifactId>maven-war-plugin</artifactId>
+                <configuration>
+                    <!--如果想在没有web.xml文件的情况下构建WAR，请设置为false-->
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                    <!--设置war包的名字-->
+                    <warName>model</warName>
+                </configuration>
+            </plugin>
+            <!-- 让打包的时候跳过测试代码 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
 		</plugins>
 	</build>
 
