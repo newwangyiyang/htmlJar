@@ -1,15 +1,20 @@
 server:
   #{开发模式运行的端口号}
   port: 8082
+  servlet:
+    context-path: /api
 logging:
   level:
+    #指定项目日志的输出级别
     root: info
+    # 根据类别来指定日志输出级别
     cn.yiyang: debug
+
 spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/review?useUnicode=true&characterEncoding=utf8
+    url: jdbc:mysql://localhost:3306/review?useUnicode=true&characterEncoding=utf8&useSSL=false
     username: root
     password: root
     initialSize: 1

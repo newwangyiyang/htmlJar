@@ -13,12 +13,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
-import java.io.InputStream;
 import java.util.*;
 
 
@@ -33,7 +30,6 @@ import java.util.*;
 @CrossOrigin
 @RequestMapping("book/bookregister")
 public class BookRegisterController {
-
     private Logger logger = LoggerFactory.getLogger(getClass());
     @Autowired
     private BookRegisterService bookRegisterService;
@@ -111,7 +107,6 @@ public class BookRegisterController {
         res.put("introduction", "管理人员");
         res.put("avatar", "https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif");
         res.put("name", "余霖");
-
         if ("admin".equals(username) && "1111111".equals(password)) {
             return ResultBean.success(res);
         } else {

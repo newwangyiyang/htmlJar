@@ -2,6 +2,13 @@ package cn.yiyang.book.entity;
 
 import com.baomidou.mybatisplus.annotations.TableId;
 import com.baomidou.mybatisplus.annotations.TableName;
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -29,10 +36,12 @@ public class BookRegisterEntity implements Serializable {
 	/**
 	 * 
 	 */
+	@JsonProperty()
 	private String bookAge;
 	/**
 	 * 
 	 */
+	@JsonFormat(pattern = "")
 	private String bookPhone;
 	/**
 	 * 
