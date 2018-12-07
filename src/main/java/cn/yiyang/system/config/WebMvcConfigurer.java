@@ -21,6 +21,7 @@ import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter;
 
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.shiro.authc.AuthenticationException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
@@ -80,6 +81,9 @@ public class WebMvcConfigurer extends WebMvcConfigurationSupport {
                 } else if (e instanceof ServletException) { //java代码异常
                     result.setCode(ResultEnum.EXCEPTION.getCode()).setMsg(ResultEnum.EXCEPTION.getMsg()).setData(request.getRequestURI());
                     logger.info(e.getMessage());
+                } else if (e instanceof AuthenticationException) { //token验证抛出异常
+                    result.setCode(ResultEnum.UNAUTHORIZED.getCode()).setMsg(e.getMessage()).setData(request.getRequestURI());
+                    logger.info(e.getMessage());
                 } else { //程序内部异常, 统一异常消息提示
                     result.setCode(ResultEnum.EXCEPTION.getCode()).setMsg(ResultEnum.EXCEPTION.getMsg()).setData(request.getRequestURI());
                     String message;
@@ -109,30 +113,30 @@ public class WebMvcConfigurer extends WebMvcConfigurationSupport {
     }
 
     //添加拦截器
-    @Override
-    public void addInterceptors(InterceptorRegistry registry) {
-        //接口签名认证拦截器，该签名认证比较简单，实际项目中可以使用Json Web Token或其他更好的方式替代。
-        if (!"dev".equals(env)) { //开发环境忽略签名认证
-            registry.addInterceptor(new HandlerInterceptorAdapter() {
-                @Override
-                public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-                    //验证签名
-                    boolean pass = validateSign(request);
-                    if (pass) {
-                        return true;
-                    } else {
-                        logger.warn("签名认证失败，请求接口：{}，请求IP：{}，请求参数：{}",
-                                request.getRequestURI(), getIpAddress(request), JSON.toJSONString(request.getParameterMap()));
-
-                        ResultBean result = new ResultBean();
-                        result.setCode(ResultEnum.UNAUTHORIZED.getCode()).setMsg(ResultEnum.UNAUTHORIZED.getMsg()).setData(request.getRequestURI());
-                        responseResult(response, result);
-                        return false;
-                    }
-                }
-            });
-        }
-    }
+//    @Override
+//    public void addInterceptors(InterceptorRegistry registry) {
+//        //接口签名认证拦截器，该签名认证比较简单，实际项目中可以使用Json Web Token或其他更好的方式替代。
+//        if (!"dev".equals(env)) { //开发环境忽略签名认证
+//            registry.addInterceptor(new HandlerInterceptorAdapter() {
+//                @Override
+//                public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
+//                    //验证签名
+//                    boolean pass = validateSign(request);
+//                    if (pass) {
+//                        return true;
+//                    } else {
+//                        logger.warn("签名认证失败，请求接口：{}，请求IP：{}，请求参数：{}",
+//                                request.getRequestURI(), getIpAddress(request), JSON.toJSONString(request.getParameterMap()));
+//
+//                        ResultBean result = new ResultBean();
+//                        result.setCode(ResultEnum.UNAUTHORIZED.getCode()).setMsg(ResultEnum.UNAUTHORIZED.getMsg()).setData(request.getRequestURI());
+//                        responseResult(response, result);
+//                        return false;
+//                    }
+//                }
+//            });
+//        }
+//    }
 
     private void responseResult(HttpServletResponse response, ResultBean result) {
         response.setCharacterEncoding("UTF-8");

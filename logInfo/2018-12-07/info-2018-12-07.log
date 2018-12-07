@@ -1,0 +1,282 @@
+13:40:17 [Thread-17] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@12720c1a: startup date [Thu Dec 06 16:33:14 CST 2018]; root of context hierarchy
+13:40:17 [Thread-17] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+13:40:17 [Thread-17] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+13:40:17 [Thread-17] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+13:40:17 [Thread-17] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+13:40:18 [restartedMain] INFO  cn.yiyang.BookApplication - Starting BookApplication on FW757PBH1J4RION with PID 30516 (D:\workspace\htmlJar\target\classes started by Administrator in D:\workspace\htmlJar)
+13:40:18 [restartedMain] DEBUG cn.yiyang.BookApplication - Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+13:40:18 [restartedMain] INFO  cn.yiyang.BookApplication - The following profiles are active: dev
+13:40:18 [restartedMain] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3a94f280: startup date [Fri Dec 07 13:40:18 CST 2018]; root of context hierarchy
+13:40:18 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[cn.yiyang.*.dao]' package. Please check your configuration.
+13:40:18 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[cn.yiyang]' package. Please check your configuration.
+13:40:18 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+13:40:18 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a9f988f7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:40:18 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+13:40:18 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+13:40:18 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+13:40:18 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+13:40:18 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+13:40:18 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+13:40:18 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+13:40:18 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+13:40:18 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+13:40:18 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 627 ms
+13:40:18 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+13:40:18 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+13:40:18 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+13:40:18 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+13:40:18 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+13:40:19 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+13:40:19 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3a94f280: startup date [Fri Dec 07 13:40:18 CST 2018]; root of context hierarchy
+13:40:19 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+13:40:19 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+13:40:19 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+13:40:19 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+13:40:19 [restartedMain] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-2} inited
+13:40:19 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/spring/boot/starter/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\workspace\htmlJar\target\classes\mapper\book\BookRegisterDao.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'cn.yiyang.book.entity.BookRegisterEntity'.  Cause: java.lang.ClassNotFoundException: Cannot find class: cn.yiyang.book.entity.BookRegisterEntity
+13:40:19 [restartedMain] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-2} closed
+13:40:19 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+13:40:19 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+13:40:24 [restartedMain] INFO  cn.yiyang.BookApplication - Starting BookApplication on FW757PBH1J4RION with PID 30516 (D:\workspace\htmlJar\target\classes started by Administrator in D:\workspace\htmlJar)
+13:40:24 [restartedMain] DEBUG cn.yiyang.BookApplication - Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+13:40:24 [restartedMain] INFO  cn.yiyang.BookApplication - The following profiles are active: dev
+13:40:24 [restartedMain] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1af92db2: startup date [Fri Dec 07 13:40:24 CST 2018]; root of context hierarchy
+13:40:25 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+13:40:25 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a9f988f7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:40:25 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+13:40:25 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+13:40:25 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+13:40:25 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+13:40:25 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+13:40:25 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+13:40:25 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+13:40:25 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+13:40:25 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+13:40:25 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 740 ms
+13:40:25 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+13:40:25 [localhost-startStop-1] INFO  o.s.b.web.servlet.RegistrationBean - Filter xssFilter was not registered (disabled)
+13:40:25 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+13:40:25 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet statViewServlet mapped to [/druid/*]
+13:40:25 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+13:40:25 [restartedMain] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-3} inited
+13:40:26 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/book/bookregister/update]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.update(cn.yiyang.book.entity.BookRegisterEntity)
+13:40:26 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/book/bookregister/delete]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.delete(java.lang.String[])
+13:40:26 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/book/bookregister/list]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.list(java.util.Map<java.lang.String, java.lang.Object>)
+13:40:26 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/book/bookregister/save]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.save(cn.yiyang.book.entity.BookRegisterEntity)
+13:40:26 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/book/bookregister/info/{bookId}]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.info(java.lang.String)
+13:40:26 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/book/bookregister/getBookerByBookPhone],methods=[POST]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.BookRegisterController.getBookerByBookPhone(cn.yiyang.book.entity.BookRegisterEntity)
+13:40:26 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/book/bookregister/getMsgCodeByBookPhone],methods=[POST]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.BookRegisterController.getMsgCodeByBookPhone(java.lang.String)
+13:40:26 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/book/bookregister/exportBookerExcel],methods=[GET]}" onto public void cn.yiyang.book.controller.BookRegisterController.exportBookerExcel(javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+13:40:26 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/book/bookregister/loginBooker],methods=[POST]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.BookRegisterController.loginBooker(java.util.Map<java.lang.String, java.lang.String>)
+13:40:26 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/book/bookregister/addBooker],methods=[POST]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.BookRegisterController.addBooker(java.util.Map<java.lang.String, java.lang.String>)
+13:40:26 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/getDemo],methods=[GET]}" onto private cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.DemoController.getDemo()
+13:40:26 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/saveDemo],methods=[GET]}" onto private cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.DemoController.saveDemo() throws java.lang.Exception
+13:40:26 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+13:40:26 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+13:40:26 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+13:40:26 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+13:40:26 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+13:40:26 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+13:40:26 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1af92db2: startup date [Fri Dec 07 13:40:24 CST 2018]; root of context hierarchy
+13:40:26 [restartedMain] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+13:40:26 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+13:40:26 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+13:40:26 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+13:40:26 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+13:40:26 [restartedMain] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+13:40:26 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+13:40:26 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+13:40:26 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+13:40:26 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+13:40:26 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+13:40:26 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path '/api'
+13:40:26 [restartedMain] INFO  cn.yiyang.BookApplication - Started BookApplication in 2.201 seconds (JVM running for 76033.038)
+13:40:26 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+13:43:55 [Thread-26] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1af92db2: startup date [Fri Dec 07 13:40:24 CST 2018]; root of context hierarchy
+13:43:55 [Thread-26] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+13:43:55 [Thread-26] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+13:43:55 [Thread-26] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+13:43:55 [Thread-26] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-3} closed
+13:43:55 [restartedMain] INFO  cn.yiyang.BookApplication - Starting BookApplication on FW757PBH1J4RION with PID 30516 (D:\workspace\htmlJar\target\classes started by Administrator in D:\workspace\htmlJar)
+13:43:55 [restartedMain] DEBUG cn.yiyang.BookApplication - Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+13:43:55 [restartedMain] INFO  cn.yiyang.BookApplication - The following profiles are active: dev
+13:43:55 [restartedMain] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@59b36145: startup date [Fri Dec 07 13:43:55 CST 2018]; root of context hierarchy
+13:43:56 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+13:43:56 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a9f988f7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:43:56 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+13:43:56 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+13:43:56 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+13:43:56 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+13:43:56 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+13:43:56 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+13:43:56 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+13:43:56 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+13:43:56 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+13:43:56 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 841 ms
+13:43:56 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+13:43:56 [localhost-startStop-1] INFO  o.s.b.web.servlet.RegistrationBean - Filter xssFilter was not registered (disabled)
+13:43:56 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+13:43:56 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet statViewServlet mapped to [/druid/*]
+13:43:56 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+13:43:56 [restartedMain] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-4} inited
+13:43:56 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/book/bookregister/update]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.update(cn.yiyang.book.entity.BookRegisterEntity)
+13:43:56 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/book/bookregister/delete]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.delete(java.lang.String[])
+13:43:56 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/book/bookregister/list]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.list(java.util.Map<java.lang.String, java.lang.Object>)
+13:43:56 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/book/bookregister/save]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.save(cn.yiyang.book.entity.BookRegisterEntity)
+13:43:56 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/book/bookregister/info/{bookId}]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.info(java.lang.String)
+13:43:56 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/book/bookregister/getBookerByBookPhone],methods=[POST]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.BookRegisterController.getBookerByBookPhone(cn.yiyang.book.entity.BookRegisterEntity)
+13:43:56 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/book/bookregister/getMsgCodeByBookPhone],methods=[POST]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.BookRegisterController.getMsgCodeByBookPhone(java.lang.String)
+13:43:56 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/book/bookregister/exportBookerExcel],methods=[GET]}" onto public void cn.yiyang.book.controller.BookRegisterController.exportBookerExcel(javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+13:43:56 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/book/bookregister/loginBooker],methods=[POST]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.BookRegisterController.loginBooker(java.util.Map<java.lang.String, java.lang.String>)
+13:43:56 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/book/bookregister/addBooker],methods=[POST]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.BookRegisterController.addBooker(java.util.Map<java.lang.String, java.lang.String>)
+13:43:56 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/getDemo],methods=[GET]}" onto private cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.DemoController.getDemo()
+13:43:56 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/saveDemo],methods=[GET]}" onto private cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.DemoController.saveDemo() throws java.lang.Exception
+13:43:56 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+13:43:56 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+13:43:56 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+13:43:56 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+13:43:56 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+13:43:56 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+13:43:56 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@59b36145: startup date [Fri Dec 07 13:43:55 CST 2018]; root of context hierarchy
+13:43:57 [restartedMain] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+13:43:57 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+13:43:57 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+13:43:57 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+13:43:57 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+13:43:57 [restartedMain] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+13:43:57 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+13:43:57 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+13:43:57 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+13:43:57 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+13:43:57 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+13:43:57 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path '/api'
+13:43:57 [restartedMain] INFO  cn.yiyang.BookApplication - Started BookApplication in 2.413 seconds (JVM running for 76243.97)
+13:43:57 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+16:38:33 [Thread-35] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@59b36145: startup date [Fri Dec 07 13:43:55 CST 2018]; root of context hierarchy
+16:38:33 [Thread-35] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+16:38:33 [Thread-35] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+16:38:33 [Thread-35] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+16:38:33 [Thread-35] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-4} closed
+16:38:33 [restartedMain] INFO  cn.yiyang.BookApplication - Starting BookApplication on FW757PBH1J4RION with PID 30516 (D:\workspace\htmlJar\target\classes started by Administrator in D:\workspace\htmlJar)
+16:38:33 [restartedMain] DEBUG cn.yiyang.BookApplication - Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+16:38:33 [restartedMain] INFO  cn.yiyang.BookApplication - The following profiles are active: dev
+16:38:33 [restartedMain] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1e3694dd: startup date [Fri Dec 07 16:38:33 CST 2018]; root of context hierarchy
+16:38:34 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+16:38:34 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a9f988f7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:38:35 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+16:38:35 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+16:38:35 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:38:35 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+16:38:35 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+16:38:35 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+16:38:35 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+16:38:35 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+16:38:35 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+16:38:35 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1560 ms
+16:38:35 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+16:38:35 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+16:38:35 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+16:38:35 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+16:38:35 [localhost-startStop-1] INFO  o.s.b.web.servlet.RegistrationBean - Filter xssFilter was not registered (disabled)
+16:38:35 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+16:38:35 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet statViewServlet mapped to [/druid/*]
+16:38:35 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+16:38:35 [restartedMain] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-5} inited
+16:38:35 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/book/bookregister/update]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.update(cn.yiyang.book.entity.BookRegisterEntity)
+16:38:35 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/book/bookregister/delete]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.delete(java.lang.String[])
+16:38:35 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/book/bookregister/list]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.list(java.util.Map<java.lang.String, java.lang.Object>)
+16:38:35 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/book/bookregister/save]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.save(cn.yiyang.book.entity.BookRegisterEntity)
+16:38:35 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/book/bookregister/info/{bookId}]}" onto public cn.yiyang.common.utils.R cn.yiyang.book.controller.BookRegisterController.info(java.lang.String)
+16:38:35 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/book/bookregister/getBookerByBookPhone],methods=[POST]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.BookRegisterController.getBookerByBookPhone(cn.yiyang.book.entity.BookRegisterEntity)
+16:38:35 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/book/bookregister/getMsgCodeByBookPhone],methods=[POST]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.BookRegisterController.getMsgCodeByBookPhone(java.lang.String)
+16:38:35 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/book/bookregister/exportBookerExcel],methods=[GET]}" onto public void cn.yiyang.book.controller.BookRegisterController.exportBookerExcel(javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+16:38:35 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/book/bookregister/loginBooker],methods=[POST]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.BookRegisterController.loginBooker(java.util.Map<java.lang.String, java.lang.String>)
+16:38:35 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/book/bookregister/addBooker],methods=[POST]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.BookRegisterController.addBooker(java.util.Map<java.lang.String, java.lang.String>)
+16:38:35 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/getDemo],methods=[GET]}" onto private cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.DemoController.getDemo()
+16:38:35 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/saveDemo],methods=[GET]}" onto private cn.yiyang.common.utils.ResultBean cn.yiyang.book.controller.DemoController.saveDemo() throws java.lang.Exception
+16:38:35 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+16:38:35 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+16:38:35 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+16:38:35 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+16:38:35 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+16:38:35 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+16:38:35 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16:38:35 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1e3694dd: startup date [Fri Dec 07 16:38:33 CST 2018]; root of context hierarchy
+16:38:35 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16:38:35 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16:38:36 [restartedMain] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+16:38:36 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+16:38:36 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+16:38:36 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+16:38:36 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+16:38:36 [restartedMain] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+16:38:36 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+16:38:36 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+16:38:36 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+16:38:36 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+16:38:36 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+16:38:36 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path '/api'
+16:38:36 [restartedMain] INFO  cn.yiyang.BookApplication - Started BookApplication in 2.95 seconds (JVM running for 86722.354)
+16:38:36 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   WebMvcAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'javax.servlet.Servlet', 'org.springframework.web.servlet.DispatcherServlet', 'org.springframework.web.servlet.config.annotation.WebMvcConfigurer'; @ConditionalOnMissingClass did not find unwanted class (OnClassCondition)
+      - found ConfigurableWebEnvironment (OnWebApplicationCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration#hiddenHttpMethodFilter matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.filter.HiddenHttpMethodFilter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration#httpPutFormContentFilter matched:
+      - @ConditionalOnProperty (spring.mvc.formcontent.putfilter.enabled) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.web.filter.HttpPutFormContentFilter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#defaultViewResolver matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.servlet.view.InternalResourceViewResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#requestContextFilter matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.context.request.RequestContextListener,org.springframework.web.filter.RequestContextFilter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#viewResolver matched:
+      - @ConditionalOnBean (types: org.springframework.web.servlet.ViewResolver; SearchStrategy: all) found beans 'defaultViewResolver', 'beanNameViewResolver', 'mvcViewResolver'; @ConditionalOnMissingBean (names: viewResolver; types: org.springframework.web.servlet.view.ContentNegotiatingViewResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter.FaviconConfiguration matched:
+      - @ConditionalOnProperty (spring.mvc.favicon.enabled) matched (OnPropertyCondition)
+
+
+Negative matches:
+-----------------
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#beanNameViewResolver:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.web.servlet.view.BeanNameViewResolver; SearchStrategy: all) found beans of type 'org.springframework.web.servlet.view.BeanNameViewResolver' beanNameViewResolver (OnBeanCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#localeResolver:
+      Did not match:
+         - @ConditionalOnProperty (spring.mvc.locale) did not find property 'locale' (OnPropertyCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
