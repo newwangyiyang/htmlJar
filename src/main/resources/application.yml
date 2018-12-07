@@ -35,6 +35,7 @@ spring:
   #指定上传图片静态文件的位置，用于通过url精心访问
   mvc:
     static-path-pattern: /**
+    throw-exception-if-no-handler-found: true
   resources:
 #      static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/,file:${web.upload-path}
       static-locations: file:${web.upload-path}

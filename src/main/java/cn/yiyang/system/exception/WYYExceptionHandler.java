@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletRequest;
  * @Description:
  */
 
-@ControllerAdvice
+//@ControllerAdvice
 public class WYYExceptionHandler {
     private Logger logger = LoggerFactory.getLogger(getClass());
 
@@ -35,8 +35,8 @@ public class WYYExceptionHandler {
      * @Author Administrator
      * @Description 处理全局异常，统一返回json格式的数据
      * @Date 14:16 2018/11/30
-     * @Param 
-     * @return 
+     * @Param
+     * @return
      **/
     @ExceptionHandler(value = Exception.class)
     @ResponseBody

@@ -32,24 +32,27 @@ public class ResultBean<T> {
         return code;
     }
 
-    public void setCode(Integer code) {
+    public ResultBean<T> setCode(Integer code) {
         this.code = code;
+        return this;
     }
 
     public String getMsg() {
         return msg;
     }
 
-    public void setMsg(String msg) {
+    public ResultBean<T> setMsg(String msg) {
         this.msg = msg;
+        return this;
     }
 
     public T getData() {
         return data;
     }
 
-    public void setData(T data) {
+    public ResultBean<T> setData(T data) {
         this.data = data;
+        return this;
     }
 
     /**

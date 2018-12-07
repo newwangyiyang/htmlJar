@@ -23,10 +23,10 @@ public class DemoController {
         DemoEntity entity = new DemoEntity();
         return ResultBean.success(entity);
     }
-    @RequestMapping(value = "/saveDemo", method = { RequestMethod.POST })
-    private ResultBean saveDemo(@RequestBody DemoEntity demo) {
-        log.info(demo.toString());
-        throw new WYYException("服务器错误");
+    @RequestMapping(value = "/saveDemo", method = { RequestMethod.GET })
+    private ResultBean saveDemo() throws Exception {
+//        throw new WYYException("服务器错误");
 //        return ResultBean.success(demo);
+        throw new Exception("服务器错误");
     }
 }

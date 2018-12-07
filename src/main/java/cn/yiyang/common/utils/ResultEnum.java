@@ -11,8 +11,12 @@ public enum ResultEnum {
 	
 	ERROR(1,"请求出错"),
 	
-	EXCEPTION(2,"请求异常");
-	
+	EXCEPTION(2,"请求异常"),
+
+	NOTFOUND(3, "请求接口地址错误"),
+
+	UNAUTHORIZED(4, "签名认证失败");
+
 	private Integer code;
 	
 	private String msg;
