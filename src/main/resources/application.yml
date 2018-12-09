@@ -6,7 +6,7 @@ server:
 
 #定义上传文件的路径
 web:
-  upload-path: D:/workspace/model/target/upload/
+  upload-path: D:/pic/upload/
 
 spring:
   jackson:
@@ -18,8 +18,8 @@ spring:
   #上传文件大小限制
   servlet:
     multipart:
-      max-file-size: 30Mb
-      max-request-size: 30Mb
+      max-file-size: 100MB
+      max-request-size: 100MB
   devtools:
     restart:
       enabled: true
@@ -34,11 +34,14 @@ spring:
       request-context-attribute: request
   #指定上传图片静态文件的位置，用于通过url精心访问
   mvc:
-    static-path-pattern: /**
     throw-exception-if-no-handler-found: true
+#    static-path-pattern: /**
   resources:
+      add-mappings: false
 #      static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/,file:${web.upload-path}
-      static-locations: file:${web.upload-path}
+#      static-locations: file:${web.upload-path}
+#      当设置了add-mappings: false, 这里的static-locations和static-path-pattern无效
+#      设置add-mappings(取消静态文件映射)的目的是检测404接口
 
 #mybatis
 mybatis-plus:

@@ -95,13 +95,27 @@ public class ResultBean<T> {
 
     /**
      * @Author Administrator
-     * @Description //TODO 
+     * @Description //TODO
      * @Date 9:16 2018/9/10
-     * @Param 
-     * @return 
+     * @Param
+     * @return
      **/
     public static <T> ResultBean<T> error(ResultEnum resultEnum) {
         return new ResultBean<>(resultEnum.getCode(), resultEnum.getMsg(), null);
+    }
+    /**
+     * @Author Administrator
+     * @Description //TODO
+     * @Date 9:16 2018/9/10
+     * @Param
+     * @return
+     **/
+    public static <T> ResultBean<T> error(ResultEnum resultEnum, T data) {
+        return new ResultBean<>(resultEnum.getCode(), resultEnum.getMsg(), data);
+    }
+
+    public static <T>ResultBean<T> error(Integer code, String msg, T data) {
+        return new ResultBean<>(code, msg, data);
     }
     /**
      * 异常

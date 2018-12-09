@@ -12,10 +12,9 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableTransactionManagement // 开启注解事务管理
 @EnableScheduling
 @SpringBootApplication
-public class BookApplication {
-	//extends SpringBootServletInitializer
+public class WYYApplication extends SpringBootServletInitializer {
 	public static void main(String[] args) {
-		SpringApplication.run(BookApplication.class, args);
+		SpringApplication.run(WYYApplication.class, args);
         System.out.println("/**\n" +
 				" *                             _ooOoo_\n" +
 				" *                            o8888888o\n" +
@@ -40,9 +39,9 @@ public class BookApplication {
 				"*/\n  ");
 	}
 
-//	 @Override
-//	 protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-//	 	// 注意的Application是启动类，就是main方法所属的类
-//	 	return builder.sources(BookApplication.class);
-//	 }
+	 @Override
+	 protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
+	 	// 注意的Application是启动类，就是main方法所属的类
+	 	return builder.sources(WYYApplication.class);
+	 }
 }

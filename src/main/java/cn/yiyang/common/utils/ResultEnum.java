@@ -15,7 +15,11 @@ public enum ResultEnum {
 
 	NOTFOUND(3, "请求接口地址错误"),
 
-	UNAUTHORIZED(4, "签名认证失败");
+    ERRORPARAMATERS(4, "请求参数错误"),
+
+    NOTTOKEN(5, "没有权限访问该接口"),
+
+	NOTALLOW(6, "不支持该请求方法");
 
 	private Integer code;
 	
