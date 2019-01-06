@@ -54,7 +54,7 @@ public class ValidateUtils {
      * @return
      */
     public static boolean isValidPhone(String phone){
-        return isValid(phone) && phone.matches("1[0-9]{10}");
+        return isValid(phone) && phone.matches("^1\\d{10}$");
     }
 
     /**

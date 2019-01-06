@@ -20,7 +20,7 @@ public class PhoneValidator implements ConstraintValidator<Phone, String>{
 
     @Override
     public boolean isValid(String phone, ConstraintValidatorContext context) {
-        if(!ValidateUtils.isValid(phone)){
+        if(ValidateUtils.isValid(phone)){
             return true;
         }else{
             String regExp = "((13|18)\\d{9})|((145|147|150|151|152|153|155|156|157|158|159|176)\\d{8})|((1700|1705|1709|1707)\\d{7})";

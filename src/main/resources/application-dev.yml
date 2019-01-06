@@ -1,8 +1,8 @@
 server:
   #{开发模式运行的端口号}
   port: 8082
-  servlet:
-    context-path: /api
+#  servlet:
+#    context-path: /api
 logging:
   level:
     #指定项目日志的输出级别

@@ -9,6 +9,7 @@ import lombok.Data;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
+import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -20,7 +21,9 @@ import java.util.Date;
  **/
 @Data
 @JsonIgnoreProperties(value = {"demoAge"}, allowGetters = true)
-public class DemoEntity {
+public class DemoEntity implements Serializable {
+    private static final long serialVersionUID = -3454028229275349812L;
+
     private String demoName;
 
     private Integer demoAge;

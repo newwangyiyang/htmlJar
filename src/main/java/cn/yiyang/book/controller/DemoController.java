@@ -1,6 +1,7 @@
 package cn.yiyang.book.controller;
 
 import cn.yiyang.book.entity.DemoEntity;
+import cn.yiyang.book.vo.DemoForm;
 import cn.yiyang.common.RequestLimit.RequestLimit;
 import cn.yiyang.common.utils.JWTUtil;
 import cn.yiyang.common.utils.ResultBean;
@@ -29,8 +30,14 @@ import javax.validation.constraints.Max;
 @RestController
 @RequestMapping("/demo")
 @Slf4j
-@Validated
 public class DemoController {
+
+    @GetMapping("/formTest")
+    @RequestLimit(count = 5) // 限制没分钟请求5次， 默认每分钟请求2次
+    public ResultBean formTest(@ValueSet(value = {"1", "2"}) @RequestParam String name) {
+        return ResultBean.success();
+    }
+
 
     @RequestMapping(value = "/getDemo", method = RequestMethod.GET)
     private ResultBean getDemo() {
@@ -63,9 +70,17 @@ public class DemoController {
     }
 
 
-    @GetMapping("/formTest")
-    @RequestLimit(count = 5) // 限制没分钟请求5次， 默认每分钟请求2次
-    public ResultBean formTest(@ValueSet(value = {"1", "2"}) @RequestParam String name) {
-        return ResultBean.success();
+
+    @PostMapping("/DemoForm")
+    public ResultBean DemoForm(@Validated @RequestBody DemoForm  demoForm) {
+        return ResultBean.success(demoForm);
+    }
+
+    @PostMapping("/ParamTest")
+    public ResultBean ParamTest(
+            @Valid
+            @Length(min = 3) @RequestParam String name
+    ) {
+        return ResultBean.success(name);
     }
 }

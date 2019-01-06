@@ -48,7 +48,7 @@ public class JWTUtil {
 
     /**
      * 校验 token 是否正确
-     *
+     * 该方法是在CustomRealm中进行校验
      * @param token    密钥
      * @param userId 用户名
      * @return 是否正确
